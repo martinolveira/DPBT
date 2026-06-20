@@ -91,7 +91,7 @@ export default async function DashboardPage() {
                     <div>
                       <p className="text-sm font-medium text-warm-800">{o.customer.nombre}</p>
                       <p className="text-xs text-warm-500 mt-0.5">
-                        {new Date(o.fecha_entrega).toLocaleDateString('es-AR')} · {o.canal === 'WHATSAPP' ? 'WhatsApp' : 'Web'}
+                        {new Date(o.fecha_entrega).toLocaleDateString('es-AR')}
                       </p>
                     </div>
                     <span className="text-sm font-semibold text-warm-800">${o.total.toLocaleString('es-AR')}</span>

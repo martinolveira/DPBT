@@ -17,7 +17,6 @@ model Shop {
   products         Product[]
   orders           Order[]
   ingredients      Ingredient[]
-  waSessions       WaBotSession[]
 }
 
 model User {
@@ -56,7 +55,6 @@ model Order {
   id             String      @id @default(cuid())
   token          String      @unique @default(cuid())
   estado         OrderEstado @default(NUEVO)
-  canal          Canal       @default(WEB)
   fecha_entrega  DateTime
   notas_cliente  String?
   notas_internas String?
@@ -103,19 +101,6 @@ model Ingredient {
   shop         Shop   @relation(fields: [shop_id], references: [id])
 }
 
-model WaBotSession {
-  id              String   @id @default(cuid())
-  whatsapp_number String
-  estado          String
-  datos_parciales Json
-  shop_id         String
-  shop            Shop     @relation(fields: [shop_id], references: [id])
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
-
-  @@unique([whatsapp_number, shop_id])
-}
-
 enum OrderEstado {
   NUEVO
   CONFIRMADO
@@ -123,11 +108,6 @@ enum OrderEstado {
   LISTO
   ENTREGADO
   CANCELADO
-}
-
-enum Canal {
-  WEB
-  WHATSAPP
 }
 
 enum PaymentEstado {

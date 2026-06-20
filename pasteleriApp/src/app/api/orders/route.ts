@@ -7,7 +7,6 @@ import { OrderEstado } from '@prisma/client'
 const createSchema = z.object({
   fechaEntrega: z.string().datetime(),
   notasCliente: z.string().optional(),
-  canal: z.enum(['WEB', 'WHATSAPP']).default('WEB'),
   customer: z.object({
     nombre: z.string().min(1),
     email: z.string().email().optional(),

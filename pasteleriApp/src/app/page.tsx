@@ -33,7 +33,7 @@ export default function LandingPage() {
           {[
             { title: 'Pedidos en tiempo real', desc: 'Tus clientes siguen el estado de su pedido sin tener que preguntarte.' },
             { title: 'Stock bajo, alerta automática', desc: 'El panel te avisa cuando un ingrediente está por agotarse.' },
-            { title: 'Pedidos por WhatsApp', desc: 'Un bot toma el pedido y lo registra directamente en tu panel.' },
+            { title: 'Panel completo', desc: 'Kanban de pedidos, catálogo, clientes e insumos en un solo lugar.' },
           ].map(f => (
             <div key={f.title} className="bg-white border border-warm-200 rounded-xl p-6">
               <h3 className="font-semibold text-warm-800 mb-2">{f.title}</h3>

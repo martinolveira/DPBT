@@ -5,7 +5,6 @@ beforeEach(async () => {
   await prisma.payment.deleteMany()
   await prisma.orderItem.deleteMany()
   await prisma.order.deleteMany()
-  await prisma.waBotSession.deleteMany()
   await prisma.ingredient.deleteMany()
   await prisma.product.deleteMany()
   await prisma.customer.deleteMany()

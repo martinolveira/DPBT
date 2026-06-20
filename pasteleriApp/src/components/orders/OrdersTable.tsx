@@ -22,7 +22,6 @@ export function OrdersTable({ orders }: { orders: any[] }) {
             <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wide">Cliente</th>
             <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wide">Estado</th>
             <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wide">Entrega</th>
-            <th className="text-left py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wide">Canal</th>
             <th className="text-right py-3 px-4 text-xs font-semibold text-warm-500 uppercase tracking-wide">Total</th>
           </tr>
         </thead>
@@ -40,7 +39,6 @@ export function OrdersTable({ orders }: { orders: any[] }) {
                 <td className="py-3 px-4 text-warm-600">
                   {new Date(o.fecha_entrega).toLocaleDateString('es-AR')}
                 </td>
-                <td className="py-3 px-4 text-warm-500">{o.canal === 'WHATSAPP' ? 'WhatsApp' : 'Web'}</td>
                 <td className="py-3 px-4 text-right font-semibold text-warm-800">
                   ${o.total.toLocaleString('es-AR')}
                 </td>

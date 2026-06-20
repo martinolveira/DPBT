@@ -1,4 +1,4 @@
-import { OrderEstado, Canal } from '@prisma/client'
+import { OrderEstado } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 
 const TRANSITIONS: Record<OrderEstado, OrderEstado[]> = {
@@ -12,10 +12,9 @@ const TRANSITIONS: Record<OrderEstado, OrderEstado[]> = {
 
 interface CreateOrderInput {
   shopId: string
-  canal: Canal
   fechaEntrega: Date
   notasCliente?: string
-  customer: { nombre: string; email?: string; telefono?: string; whatsapp?: string }
+  customer: { nombre: string; email?: string; telefono?: string }
   items: { productId: string; cantidad: number; personalizacion?: string; restricciones?: string }[]
 }
 
@@ -33,7 +32,6 @@ export async function createOrder(input: CreateOrderInput) {
     data: {
       shop_id: input.shopId,
       customer_id: customer.id,
-      canal: input.canal,
       fecha_entrega: input.fechaEntrega,
       notas_cliente: input.notasCliente,
       total,

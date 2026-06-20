@@ -19,7 +19,6 @@ interface Order {
   id: string
   token: string
   estado: string
-  canal: string
   fecha_entrega: string
   total: number
   customer: { nombre: string }
@@ -33,7 +32,6 @@ export function OrderCard({ order }: { order: Order }) {
       <div className="bg-white border border-warm-200 rounded-lg p-3 hover:border-warm-400 transition-colors cursor-pointer">
         <div className="flex items-start justify-between gap-2 mb-2">
           <Badge variant={cfg.variant}>{cfg.label}</Badge>
-          {order.canal === 'WHATSAPP' && <Badge variant="default">WA</Badge>}
         </div>
         <p className="text-sm font-medium text-warm-800 truncate">{order.customer.nombre}</p>
         <p className="text-xs text-warm-500 mt-0.5">

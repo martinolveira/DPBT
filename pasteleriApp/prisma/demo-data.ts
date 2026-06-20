@@ -1,4 +1,4 @@
-import { PrismaClient, OrderEstado, Canal, PaymentEstado } from '@prisma/client'
+import { PrismaClient, OrderEstado, PaymentEstado } from '@prisma/client'
 import { PrismaPg } from '@prisma/adapter-pg'
 import * as dotenv from 'dotenv'
 
@@ -48,7 +48,6 @@ async function main() {
   type OrderInput = {
     customer_id: string
     estado: OrderEstado
-    canal: Canal
     fecha_entrega: Date
     notas_cliente?: string
     notas_internas?: string
@@ -60,7 +59,7 @@ async function main() {
   const ordersToCreate: OrderInput[] = [
     // NUEVO — recién entrados
     {
-      customer_id: ana.id, estado: 'NUEVO', canal: 'WEB', fecha_entrega: d(5),
+      customer_id: ana.id, estado: 'NUEVO', fecha_entrega: d(5),
       notas_cliente: 'Es para el cumpleaños de mi hija, que le gustan las fresas',
       items: [
         { product: byName('Torta de fresas'), cantidad: 1, personalizacion: 'Feliz cumple Lucía', restricciones: 'Sin gluten si es posible' },
@@ -68,7 +67,7 @@ async function main() {
       ],
     },
     {
-      customer_id: carlos.id, estado: 'NUEVO', canal: 'WHATSAPP', fecha_entrega: d(4),
+      customer_id: carlos.id, estado: 'NUEVO', fecha_entrega: d(4),
       notas_cliente: 'Para evento corporativo',
       items: [
         { product: byName('Alfajores'), cantidad: 2 },
@@ -77,7 +76,7 @@ async function main() {
     },
     // CONFIRMADO
     {
-      customer_id: valentina.id, estado: 'CONFIRMADO', canal: 'WHATSAPP', fecha_entrega: d(3),
+      customer_id: valentina.id, estado: 'CONFIRMADO', fecha_entrega: d(3),
       notas_cliente: 'Boda civil, necesito que sea imponente',
       notas_internas: 'Llamar para confirmar sabores del relleno',
       items: [
@@ -86,7 +85,7 @@ async function main() {
       payment: { estado: 'COMPLETADO' },
     },
     {
-      customer_id: diego.id, estado: 'CONFIRMADO', canal: 'WEB', fecha_entrega: d(3),
+      customer_id: diego.id, estado: 'CONFIRMADO', fecha_entrega: d(3),
       items: [
         { product: byName('Torta de chocolate'), cantidad: 1, personalizacion: 'Feliz retiro papá' },
         { product: byName('Alfajores'), cantidad: 1 },
@@ -95,7 +94,7 @@ async function main() {
     },
     // EN_PRODUCCION
     {
-      customer_id: sofia.id, estado: 'EN_PRODUCCION', canal: 'WEB', fecha_entrega: d(1),
+      customer_id: sofia.id, estado: 'EN_PRODUCCION', fecha_entrega: d(1),
       notas_internas: 'Ya en horno, sacar a las 16hs',
       items: [
         { product: byName('Torta de fresas'), cantidad: 1, personalizacion: 'Happy Birthday Sofi!' },
@@ -104,7 +103,7 @@ async function main() {
       payment: { estado: 'COMPLETADO' },
     },
     {
-      customer_id: martin.id, estado: 'EN_PRODUCCION', canal: 'WHATSAPP', fecha_entrega: d(2),
+      customer_id: martin.id, estado: 'EN_PRODUCCION', fecha_entrega: d(2),
       items: [
         { product: byName('Brownies'), cantidad: 2 },
       ],
@@ -112,7 +111,7 @@ async function main() {
     },
     // LISTO — para retirar
     {
-      customer_id: ana.id, estado: 'LISTO', canal: 'WEB', fecha_entrega: d(0),
+      customer_id: ana.id, estado: 'LISTO', fecha_entrega: d(0),
       notas_internas: 'Lista en caja 3, espera retiro',
       items: [
         { product: byName('Cupcakes'), cantidad: 1, personalizacion: 'Sin decoración extra' },
@@ -121,7 +120,7 @@ async function main() {
     },
     // ENTREGADO — historial
     {
-      customer_id: carlos.id, estado: 'ENTREGADO', canal: 'WEB', fecha_entrega: d(-3),
+      customer_id: carlos.id, estado: 'ENTREGADO', fecha_entrega: d(-3),
       items: [
         { product: byName('Torta de chocolate'), cantidad: 1, personalizacion: 'Feliz aniversario' },
       ],
@@ -129,7 +128,7 @@ async function main() {
       createdAt: d(-6),
     },
     {
-      customer_id: valentina.id, estado: 'ENTREGADO', canal: 'WHATSAPP', fecha_entrega: d(-5),
+      customer_id: valentina.id, estado: 'ENTREGADO', fecha_entrega: d(-5),
       items: [
         { product: byName('Alfajores'), cantidad: 1 },
         { product: byName('Brownies'), cantidad: 1 },
@@ -139,7 +138,7 @@ async function main() {
     },
     // CANCELADO
     {
-      customer_id: diego.id, estado: 'CANCELADO', canal: 'WEB', fecha_entrega: d(2),
+      customer_id: diego.id, estado: 'CANCELADO', fecha_entrega: d(2),
       notas_internas: 'Cliente canceló por cambio de fecha del evento',
       items: [
         { product: byName('Torta 3 pisos'), cantidad: 1 },

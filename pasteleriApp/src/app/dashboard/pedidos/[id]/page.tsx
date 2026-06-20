@@ -62,8 +62,7 @@ export default async function PedidoDetailPage({ params }: { params: Promise<{ i
         <div>
           <h1 className="text-2xl font-bold text-warm-800">{order.customer.nombre}</h1>
           <p className="text-warm-500 text-sm mt-1">
-            Entrega: {new Date(order.fecha_entrega).toLocaleDateString('es-AR')} ·{' '}
-            Canal: {order.canal === 'WHATSAPP' ? 'WhatsApp' : 'Web'}
+            Entrega: {new Date(order.fecha_entrega).toLocaleDateString('es-AR')}
           </p>
         </div>
         <Badge variant={cfg.variant}>{cfg.label}</Badge>
