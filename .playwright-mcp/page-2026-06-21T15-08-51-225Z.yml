@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: PasteleriApp
+    - navigation [ref=e4]:
+      - button "Soy cliente" [ref=e5] [cursor=pointer]
+      - button "Panel emprendedora" [ref=e6] [cursor=pointer]
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - heading "Hacé tu pedido" [level=1] [ref=e10]
+      - paragraph [ref=e11]:
+        - text: Completá el formulario y recibís respuesta en menos de 24 horas.
+        - text: Sin idas y vueltas por WhatsApp.
+    - generic [ref=e12]:
+      - generic [ref=e13]: ¿Ya tenés un pedido? Seguí su estado
+      - generic [ref=e14]:
+        - 'textbox "Ej: PED-003" [ref=e15]'
+        - button "Ver estado" [disabled] [ref=e16]
+    - generic [ref=e18]:
+      - generic [ref=e19]: PED-009
+      - generic [ref=e20]: Alfajores × 12
+      - generic [ref=e21]: "Entrega: 27 jun · $900"
+      - generic [ref=e22]:
+        - text: 📱 Te avisamos por WhatsApp al
+        - strong [ref=e23]: 11 9988-7766
+        - text: cuando tu pedido esté listo para retirar.
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: "1"
+          - generic [ref=e27]:
+            - generic [ref=e28]: Pedido recibido
+            - generic [ref=e29]: Estamos revisando tu solicitud
+        - generic [ref=e30]:
+          - generic [ref=e31]: "2"
+          - generic [ref=e32]:
+            - generic [ref=e33]: Confirmado
+            - generic [ref=e34]: Tu pedido fue aceptado
+        - generic [ref=e35]:
+          - generic [ref=e36]: "3"
+          - generic [ref=e37]:
+            - generic [ref=e38]: En preparación
+            - generic [ref=e39]: Manos en la masa
+        - generic [ref=e40]:
+          - generic [ref=e41]: "4"
+          - generic [ref=e42]:
+            - generic [ref=e43]: ¡Listo para retirar!
+            - generic [ref=e44]: Podés pasar cuando quieras
+        - generic [ref=e45]:
+          - generic [ref=e46]: "5"
+          - generic [ref=e47]:
+            - generic [ref=e48]: Entregado
+            - generic [ref=e49]: ¡Gracias!
+      - button "Hacer otro pedido" [ref=e50] [cursor=pointer]
+  - button "↺ Reiniciar demo" [ref=e51] [cursor=pointer]

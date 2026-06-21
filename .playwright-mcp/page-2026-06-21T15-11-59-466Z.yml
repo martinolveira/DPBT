@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: PasteleriApp
+    - navigation [ref=e4]:
+      - button "Soy cliente" [ref=e5] [cursor=pointer]
+      - button "Panel emprendedora" [ref=e6] [cursor=pointer]
+  - generic [ref=e52]:
+    - generic [ref=e54]:
+      - button "Panel" [ref=e55] [cursor=pointer]
+      - button "Historial" [ref=e56] [cursor=pointer]
+      - button "Stock" [ref=e57] [cursor=pointer]
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: Entregas hoy
+          - generic [ref=e63]: "1"
+          - generic [ref=e64]: pedido para retirar hoy
+        - generic [ref=e65]:
+          - generic [ref=e66]: Ingresos del mes
+          - generic [ref=e67]: $15.150
+          - generic [ref=e68]: pedidos activos y entregados
+        - generic [ref=e69]:
+          - generic [ref=e70]: Pedidos activos
+          - generic [ref=e71]: "5"
+          - generic [ref=e72]: en proceso
+      - generic [ref=e73]:
+        - generic [ref=e74]: ⚠
+        - generic [ref=e75]:
+          - text: "Stock bajo:"
+          - strong [ref=e76]: Harina (2 kg)
+          - text: ","
+          - strong [ref=e77]: Dulce de leche (0,5 kg)
+          - text: — revisá el inventario antes del próximo turno.
+      - generic [ref=e78]: Capacidad — próximas 2 semanas
+      - generic [ref=e79]:
+        - generic [ref=e1389]: Lu
+        - generic [ref=e1390]: Ma
+        - generic [ref=e1391]: Mi
+        - generic [ref=e1392]: Ju
+        - generic [ref=e1393]: Vi
+        - generic [ref=e1394]: Sá
+        - generic [ref=e1395]: Do
+      - generic [ref=e87]:
+        - generic [ref=e1396]:
+          - generic [ref=e1397]: Sá
+          - generic [ref=e1398]: "20"
+          - generic [ref=e1399]: 1/3
+        - generic [ref=e1400]:
+          - generic [ref=e1401]: Do
+          - generic [ref=e1402]: "21"
+          - generic [ref=e1403]: 3/3
+        - generic [ref=e1404]:
+          - generic [ref=e1405]: Lu
+          - generic [ref=e1406]: "22"
+        - generic [ref=e1408]:
+          - generic [ref=e1409]: Ma
+          - generic [ref=e1410]: "23"
+          - generic [ref=e1411]: 1/3
+        - generic [ref=e1412]:
+          - generic [ref=e1413]: Mi
+          - generic [ref=e1414]: "24"
+        - generic [ref=e1416]:
+          - generic [ref=e1417]: Ju
+          - generic [ref=e1418]: "25"
+        - generic [ref=e1420]:
+          - generic [ref=e1421]: Vi
+          - generic [ref=e1422]: "26"
+        - generic [ref=e1424]:
+          - generic [ref=e1425]: Sá
+          - generic [ref=e1426]: "27"
+        - generic [ref=e1428]:
+          - generic [ref=e1429]: Do
+          - generic [ref=e1430]: "28"
+        - generic [ref=e1432]:
+          - generic [ref=e1433]: Lu
+          - generic [ref=e1434]: "29"
+        - generic [ref=e1436]:
+          - generic [ref=e1437]: Ma
+          - generic [ref=e1438]: "30"
+        - generic [ref=e1440]:
+          - generic [ref=e1441]: Mi
+          - generic [ref=e1442]: "1"
+        - generic [ref=e1444]:
+          - generic [ref=e1445]: Ju
+          - generic [ref=e1446]: "2"
+        - generic [ref=e1448]:
+          - generic [ref=e1449]: Vi
+          - generic [ref=e1450]: "3"
+      - generic [ref=e144]:
+        - generic [ref=e145]: Libre
+        - generic [ref=e147]: Ocupado (1–2/3)
+        - generic [ref=e149]: Lleno (3/3)
+      - generic [ref=e151]: Próximas entregas
+      - generic [ref=e152]:
+        - generic [ref=e1452]:
+          - text: Hoy
+          - generic [ref=e1453]: "1"
+        - generic [ref=e1454]:
+          - generic [ref=e1455]:
+            - generic [ref=e1456]: Lucía Fernández
+            - generic [ref=e1457]: Torta pequeña (6 porciones)
+          - generic [ref=e1458]:
+            - generic [ref=e1459]: Listo
+            - generic [ref=e1460]: Esperando retiro
+        - generic [ref=e1461]:
+          - text: Mañana
+          - generic [ref=e1462]: "3"
+        - generic [ref=e1463]:
+          - generic [ref=e1464]:
+            - generic [ref=e1465]: Ana García
+            - generic [ref=e1466]: Torta grande (15 porciones)
+          - generic [ref=e1467]:
+            - generic [ref=e1468]: Listo
+            - generic [ref=e1469]: Esperando retiro
+        - generic [ref=e1470]:
+          - generic [ref=e1471]:
+            - generic [ref=e1472]: Sofía Méndez
+            - generic [ref=e1473]: Torta pequeña (6 porciones)
+          - generic [ref=e1475]: Confirmado
+        - generic [ref=e1476]:
+          - generic [ref=e1477]:
+            - generic [ref=e1478]: Tomás Gutiérrez
+            - generic [ref=e1479]: Cupcakes × 12
+          - generic [ref=e1481]: Confirmado
+      - generic [ref=e183]: Todos los pedidos
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]: Nuevo
+            - generic [ref=e188]: "0"
+          - generic [ref=e1482]: Sin pedidos
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]: Confirmado
+            - generic [ref=e194]: "3"
+          - generic [ref=e195]:
+            - generic [ref=e1483] [cursor=pointer]:
+              - generic [ref=e1484]: PED-002
+              - generic [ref=e1485]: María López
+              - generic [ref=e1486]: Cupcakes × 12
+              - generic [ref=e1487]:
+                - generic [ref=e1488]: 23 jun
+                - generic [ref=e1489]: $2.100
+            - generic [ref=e1490] [cursor=pointer]:
+              - generic [ref=e1491]: PED-006
+              - generic [ref=e1492]: Sofía Méndez
+              - generic [ref=e1493]: Torta pequeña (6 porciones)
+              - generic [ref=e1494]:
+                - generic [ref=e1495]: Mañana
+                - generic [ref=e1496]: $2.250
+            - generic [ref=e1497] [cursor=pointer]:
+              - generic [ref=e1498]: PED-007
+              - generic [ref=e1499]: Tomás Gutiérrez
+              - generic [ref=e1500]: Cupcakes × 12
+              - generic [ref=e1501]:
+                - generic [ref=e1502]: Mañana
+                - generic [ref=e1503]: $1.500
+        - generic [ref=e224]:
+          - generic [ref=e225]:
+            - generic [ref=e226]: En producción
+            - generic [ref=e227]: "0"
+          - generic [ref=e1504]: Sin pedidos
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - generic [ref=e232]: Listo ✓
+            - generic [ref=e233]: "2"
+          - generic [ref=e234]:
+            - generic [ref=e1505] [cursor=pointer]:
+              - generic [ref=e1506]: PED-001
+              - generic [ref=e1507]: Ana García
+              - generic [ref=e1508]: Torta grande (15 porciones)
+              - generic [ref=e1509]:
+                - generic [ref=e1510]: Mañana
+                - generic [ref=e1511]: $5.500
+            - generic [ref=e1512] [cursor=pointer]:
+              - generic [ref=e1513]: PED-005
+              - generic [ref=e1514]: Lucía Fernández
+              - generic [ref=e1515]: Torta pequeña (6 porciones)
+              - generic [ref=e1516]:
+                - generic [ref=e1517]: ¡Hoy!
+                - generic [ref=e1518]: $2.900
+        - generic [ref=e249]:
+          - generic [ref=e250]:
+            - generic [ref=e251]: Entregado
+            - generic [ref=e252]: "1"
+          - generic [ref=e1519] [cursor=pointer]:
+            - generic [ref=e1520]: PED-004
+            - generic [ref=e1521]: Valentina Sosa
+            - generic [ref=e1522]: Alfajores × 12
+            - generic [ref=e1523]:
+              - generic [ref=e1524]: ¡Hoy!
+              - generic [ref=e1525]: $900
+  - generic: 🎉 Listo — se notifica a Ana García por WhatsApp
+  - button "↺ Reiniciar demo" [ref=e51] [cursor=pointer]

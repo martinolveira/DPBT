@@ -1,0 +1,115 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: PasteleriApp
+    - navigation [ref=e4]:
+      - button "Soy cliente" [ref=e5] [cursor=pointer]
+      - button "Panel emprendedora" [ref=e6] [cursor=pointer]
+  - generic [ref=e52]:
+    - generic [ref=e54]:
+      - button "Panel" [ref=e55] [cursor=pointer]
+      - button "Historial" [ref=e56] [cursor=pointer]
+      - button "Stock" [ref=e57] [cursor=pointer]
+    - generic [ref=e446]:
+      - generic [ref=e447]:
+        - heading "Stock de insumos" [level=2] [ref=e448]
+        - button "+ Agregar insumo" [ref=e449] [cursor=pointer]
+      - table [ref=e451]:
+        - rowgroup [ref=e452]:
+          - row "Insumo Stock actual Mínimo Estado" [ref=e453]:
+            - columnheader "Insumo" [ref=e454]
+            - columnheader "Stock actual" [ref=e455]
+            - columnheader "Mínimo" [ref=e456]
+            - columnheader "Estado" [ref=e457]
+            - columnheader [ref=e458]
+        - rowgroup [ref=e459]:
+          - row "Harina 000 5 kg mín. 2 kg Suficiente ✕" [ref=e549]:
+            - cell "Harina 000" [ref=e550]
+            - cell "5 kg" [ref=e551]:
+              - spinbutton [ref=e552]: "5"
+              - text: kg
+            - cell "mín. 2 kg" [ref=e553]
+            - cell "Suficiente" [ref=e554]:
+              - generic [ref=e555]: Suficiente
+            - cell "✕" [ref=e556]:
+              - button "✕" [ref=e557] [cursor=pointer]
+          - row "Azúcar 3 kg mín. 1 kg Suficiente ✕" [ref=e558]:
+            - cell "Azúcar" [ref=e559]
+            - cell "3 kg" [ref=e560]:
+              - spinbutton [ref=e561]: "3"
+              - text: kg
+            - cell "mín. 1 kg" [ref=e562]
+            - cell "Suficiente" [ref=e563]:
+              - generic [ref=e564]: Suficiente
+            - cell "✕" [ref=e565]:
+              - button "✕" [ref=e566] [cursor=pointer]
+          - row "Manteca 1.2 kg mín. 0.5 kg Suficiente ✕" [ref=e567]:
+            - cell "Manteca" [ref=e568]
+            - cell "1.2 kg" [ref=e569]:
+              - spinbutton [ref=e570]: "1.2"
+              - text: kg
+            - cell "mín. 0.5 kg" [ref=e571]
+            - cell "Suficiente" [ref=e572]:
+              - generic [ref=e573]: Suficiente
+            - cell "✕" [ref=e574]:
+              - button "✕" [ref=e575] [cursor=pointer]
+          - row "Huevos 18 unidad mín. 12 unidad Suficiente ✕" [ref=e576]:
+            - cell "Huevos" [ref=e577]
+            - cell "18 unidad" [ref=e578]:
+              - spinbutton [ref=e579]: "18"
+              - text: unidad
+            - cell "mín. 12 unidad" [ref=e580]
+            - cell "Suficiente" [ref=e581]:
+              - generic [ref=e582]: Suficiente
+            - cell "✕" [ref=e583]:
+              - button "✕" [ref=e584] [cursor=pointer]
+          - row "Dulce de leche 0.5 kg mín. 0.5 kg Bajo ✕" [ref=e585]:
+            - cell "Dulce de leche" [ref=e586]
+            - cell "0.5 kg" [ref=e587]:
+              - spinbutton [ref=e588]: "0.5"
+              - text: kg
+            - cell "mín. 0.5 kg" [ref=e589]
+            - cell "Bajo" [ref=e590]:
+              - generic [ref=e591]: Bajo
+            - cell "✕" [ref=e592]:
+              - button "✕" [ref=e593] [cursor=pointer]
+          - row "Esencia vainilla 200 ml mín. 100 ml Suficiente ✕" [ref=e594]:
+            - cell "Esencia vainilla" [ref=e595]
+            - cell "200 ml" [ref=e596]:
+              - spinbutton [ref=e597]: "200"
+              - text: ml
+            - cell "mín. 100 ml" [ref=e598]
+            - cell "Suficiente" [ref=e599]:
+              - generic [ref=e600]: Suficiente
+            - cell "✕" [ref=e601]:
+              - button "✕" [ref=e602] [cursor=pointer]
+          - row "Cacao en polvo 800 g mín. 300 g Suficiente ✕" [ref=e603]:
+            - cell "Cacao en polvo" [ref=e604]
+            - cell "800 g" [ref=e605]:
+              - spinbutton [ref=e606]: "800"
+              - text: g
+            - cell "mín. 300 g" [ref=e607]
+            - cell "Suficiente" [ref=e608]:
+              - generic [ref=e609]: Suficiente
+            - cell "✕" [ref=e610]:
+              - button "✕" [ref=e611] [cursor=pointer]
+          - row "Crema de leche 0.8 l mín. 0.5 l Suficiente ✕" [ref=e612]:
+            - cell "Crema de leche" [ref=e613]
+            - cell "0.8 l" [ref=e614]:
+              - spinbutton [ref=e615]: "0.8"
+              - text: l
+            - cell "mín. 0.5 l" [ref=e616]
+            - cell "Suficiente" [ref=e617]:
+              - generic [ref=e618]: Suficiente
+            - cell "✕" [ref=e619]:
+              - button "✕" [ref=e620] [cursor=pointer]
+          - row "Azúcar impalpable 500 g mín. 100 g Suficiente ✕" [ref=e621]:
+            - cell "Azúcar impalpable" [ref=e622]
+            - cell "500 g" [ref=e623]:
+              - spinbutton [ref=e624]: "500"
+              - text: g
+            - cell "mín. 100 g" [ref=e625]
+            - cell "Suficiente" [ref=e626]:
+              - generic [ref=e627]: Suficiente
+            - cell "✕" [ref=e628]:
+              - button "✕" [ref=e629] [cursor=pointer]
+  - button "↺ Reiniciar demo" [ref=e51] [cursor=pointer]
